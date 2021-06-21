@@ -1,4 +1,5 @@
 import { Fragment } from 'react'
+import Link from 'next/link'
 import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 
@@ -43,9 +44,9 @@ export default function Home({ latest }) {
                     >
                       <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
                         <div className="flex items-center justify-between w-full md:w-auto">
-                          <a href="/" className="font-bold text-2xl text-red-500" style={{fontFamily: 'Forte, sans-serif'}}>
+                          <Link href="/" className="font-bold text-2xl text-red-500" style={{fontFamily: 'Forte, sans-serif'}}>
                             Haldon Views
-                          </a>
+                          </Link>
                           <div className="-mr-2 flex items-center md:hidden">
                             <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-500">
                               <span className="sr-only">Open main menu</span>
@@ -56,9 +57,9 @@ export default function Home({ latest }) {
                       </div>
                       <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
                         {navigation.map((item) => (
-                          <a key={item.name} href={item.href} className="font-medium text-gray-500 hover:text-gray-900">
+                          <Link key={item.name} href={item.href} className="font-medium text-gray-500 hover:text-gray-900">
                             {item.name}
-                          </a>
+                          </Link>
                         ))}
                       </div>
                     </nav>
@@ -137,6 +138,7 @@ export default function Home({ latest }) {
           </div>
         </div>
         <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
             src="https://i.imgur.com/YiBEOCP.jpg"
