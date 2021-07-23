@@ -6,9 +6,14 @@ type Newsletter = {
 
 export const newsletters: Newsletter[] = [
   {
+    name: 'August/October 2021',
+    filePath: 'august-october-2021',
+    latest: true,
+  },
+  {
     name: 'June/July 2021',
     filePath: 'june-july-2021',
-    latest: true,
+    latest: false,
   },
 ]
 
