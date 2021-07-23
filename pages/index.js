@@ -7,7 +7,7 @@ import { latest } from '../data/archive'
 
 const navigation = [
   { name: 'Past editions', href: '/archive' },
-  { name: 'Get in touch', href: '/contact' },
+  { name: 'Get in touch', href: 'mailto:haldonviews@gmail.com' },
 ]
 
 export const getStaticProps = async () => {
