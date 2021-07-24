@@ -141,7 +141,7 @@ export default function Archive({ newsletters }) {
                 <p className="font-bold text-lg">{item.name}</p>
                 <a
                   href={`/editions/${item.filePath}.pdf`}
-                  className="flex items-center justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-red-600 hover:bg-red-700 md:py-3 md:text-base md:px-5"
+                  className="text-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-red-600 hover:bg-red-700 md:py-3 md:text-base md:px-5"
                 >
                   Download edition
                 </a>
